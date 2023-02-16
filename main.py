@@ -17,5 +17,5 @@ def index():
     file.close()
 
     return render_template("main.html",show=send)
-
-app.run()
+if __name__=="__main__":
+    app.run()

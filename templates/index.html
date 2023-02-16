@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="main.css">
+    </head>
+    <body>
+        <h1>Chat Room</h1>
+        <form id="chat" method="POST">
+            <h3>Username</h3>
+            <input type="text" id="Username" name="Username"  required>
+            <p>What you want to say?</p>
+            <input type="text" id="name" name="name"  required>
+            <input type="submit" value="Send" method="POST">
+        </form>
+        {%for i in show%}
+            <h2>{{i}}</h2>
+        {%endfor%}
+        
+
+    </body>
+</html>
